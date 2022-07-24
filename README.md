@@ -62,9 +62,25 @@ Funçao excluir:
 https://github.com/calvesaws/Documentacao/raw/main/DeleteRegistro-a12931f7-ad90-4f43-b0c4-9622561ed7ce.zip
 
 Faça uploud em cada função com o link dos dowloads.
-Clique na função 
+Clique na função que for desenvolver para inserir registros na tabela do banco de dados.
+Clique em "Fazer upload de" e em seguida "Arquivo zip".
+Selecione a opção "Fazer download" escolha o download referente a função inserir e clique em "Salvar".
+Faça esse mesmo procedimento para todas as funções com os downloads respectivos.
 
 
+Api Gateway
+A ApiGateway tem a função de integração com as funções lambda.
+
+Acesse o serviço API Gateway.
+Crie uma API.
+Selecione a opção "API REST" (pública).
+Clique em "Compilar".
+Defina um nome para a API e clique em "Criar API".
+Na opção "Ações" defina o Recurso e método.
+Recurso: Insira o nome do recurso e o caminho desse recurso.
+Selecione a opção "Ativar CORS do API Gateway" e "Criar recurso".
+Método: Selecione a opção "Post", selecione "Usar a integração de proxy do Lambda" 
+Função Lambda: Insira o nome da função responsável pelo código de inserir registros na tabela do bano de dados. Clique em "Salvar".
 
 
 
