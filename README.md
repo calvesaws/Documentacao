@@ -84,8 +84,12 @@ Defina um nome para a API e clique em "Criar API".
 Na opção "Ações" defina o Recurso e método.
 Recurso: Insira o nome do recurso e o caminho desse recurso.
 Selecione a opção "Ativar CORS do API Gateway" e "Criar recurso".
-Método: Selecione a opção "Post", selecione "Usar a integração de proxy do Lambda" 
+Método: Selecione a opção "Post" 
 Função Lambda: Insira o nome da função responsável pelo código de inserir registros na tabela do bano de dados. Clique em "Salvar".
+
+obs; apenas para get e delete
+Método: Selecione a opção "Get", selecione "Usar a integração de proxy do Lambda" 
+
 
 
 
