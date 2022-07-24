@@ -106,7 +106,25 @@ Clique em "Ações", "Conectar" e "Conectar". Irá abrir um console em outra aba
 Precisará habilitar e instalar servidor web(nginx).
 Digite os seguintes comandos no console: "sudo amazon-linux-extras enable nginx1", "sudo yum install nginx", "y".
 Nessa etapa precisará configurar o arquivo de configuração.
+Digite "sudo systemclt enable ngnix" e "sudo systemclt start ngnix"
+Gere a chave e certificado auto-assinado utilizado pelo nginx para conexão https:
+sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/pki/nginx/server.key -out /etc/pki/nginx/server.crt
+Common Name (eg, your name or your server's hostname) []:*.compute-1.amazonaws.com
+Adicione o seguinte trecho na seção server responsavel pela porta 80:
+location / {
+        try_files $uri $uri/ /index.html;
+        }
+        
+Descomente toda seção serve responsável pela 443 server e realize as seguintes alterações:
+Comente ou exclua esse trecho:
+#   ssl_ciphers PROFILE=SYSTEM;
+     #   ssl_prefer_server_ciphers on;
 
+Adicione esse trecho:
+ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
+        location / {
+        try_files $uri $uri/ /index.html;
+        }
 
 
 
