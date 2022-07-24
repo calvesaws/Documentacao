@@ -23,6 +23,8 @@ vida (TTL)" selecione a opção "Habilitar". Insira o nome do atributo que terá
 utilizado na função Lambda futuramente para controlar o tempo de vida do documento) e clique em habilitar TTL.
 
 2- Role
+Role são permissões que os serviços precisam para interagir entre si. 
+
 Acesse o serviço IAM.
 Funções.
 Criar função.
@@ -33,16 +35,24 @@ Defina o nome da função e a Descrição.
 Clique em "Criar função".
 
 
-3-Funções Lambda
-Utilizei as ferramentas em nuvem da AWS, como as funções Lambda, onde posso executar o código funcional sem utilizar um serviço. Escolhi a linguagem Python
-nesse processo.
-
-Utilizei três funções Lambda para executar o código com as orientações a seguir:
-Inserir, pegar e excluir
-A função Lambda Inserir é responsável por gravar registros no banco de dados(DynamoDB), onde executa para criar o documento com os dados que vou precisar para
-enviar a mensagem, como a mensagem em si, uma senha, tempo de armazenamento no banco de dados, quantidade de visualizações e o id referente a essas informações.
+3-Funções Lambda.
+As funções lambda servem para você desenvolver o seu código backend.
+Forão criadas três funções Lambda para executar o código com as orientações a seguir:
+Inserir, pegar e excluir.
+A função Lambda Inserir é responsável por gravar registros no banco de dados(DynamoDB), onde executa para criar o documento com os dados que vou precisar
+para enviar a mensagem, como a mensagem em si, uma senha, tempo de armazenamento no banco de dados, quantidade de visualizações e o id referente a essas
+informações.
 Adicionei a função de criptografar a mensagem para que mesmo se o link for visualizado por terceiros, os dados estarão criptografados no banco de dados,
 assegurando o conteúdo da mensagem.
-Para ter acesso a esses dados no banco de dados, a função lambda precisa permitir que o banco DynamoDB faça integração com ela, assim como o serviço de
-apiGateway.
+
+Acesse o serviço Lambda, Funções e Criar funções.
+Defina um nome para a função.
+Em "Tempo de execução", defina a linguagem que será desenvolvida sua função.
+Clique em "Criar função".
+Após a função ser criada, desenvolva o código na aba código
+
+
+
+
+
 
