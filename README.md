@@ -84,11 +84,49 @@ Defina um nome para a API e clique em "Criar API".
 Na opção "Ações" defina o Recurso e método.
 Recurso: Insira o nome do recurso e o caminho desse recurso.
 Selecione a opção "Ativar CORS do API Gateway" e "Criar recurso".
-Método: Selecione a opção "Post" 
+Método: Selecione a opção "Post"
+*Obs. Apenas para get e delete selecione "Usar a integração de proxy do Lambda" 
 Função Lambda: Insira o nome da função responsável pelo código de inserir registros na tabela do bano de dados. Clique em "Salvar".
 
-obs; apenas para get e delete
-Método: Selecione a opção "Get", selecione "Usar a integração de proxy do Lambda" 
+
+EC2
+A plataforma EC2 é uma máquina virtual para hospedar o código front, que será utilizado para melhorar a experiência dos usuários.
+
+Acesse o serviço EC2.
+Clique em "Instâncias".
+Executar instâncias.
+Dê um nome a instância.
+Em "Imagens de aplicação e de sistema operacional" escolha "Amazon Linux".
+Em "Par de chaves (login)" é preciso criar um par de chaves para se conectar com segurança à sua instância. Clique em "Criar novo par de chaves".
+Defina um nome para o par de chaves.
+Clique em "Criar par de chaves".
+Em "Network settings" habilite as seguintes regras:"Permitir tráfego HTTPs da Internet" e "Permitir tráfego HTTP da Internet".
+Clique em "Executar intância".
+Clique em "Ações", "Conectar" e "Conectar". Irá abrir um console em outra aba.
+Precisará habilitar e instalar servidor web(nginx).
+Digite os seguintes comandos no console: "sudo amazon-linux-extras enable nginx1", "sudo yum install nginx", "y".
+Nessa etapa precisará configurar o arquivo de configuração.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
