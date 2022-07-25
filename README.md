@@ -130,6 +130,10 @@ ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 6- Código Front
 O código front foi desenvolvido em linguagem Vue Js.
 O zip do front é https://github.com/calvesaws/Documentacao/raw/main/dist.zip
+Execute esses três comandos no EC2:
+wget https://github.com/calvesaws/Documentacao/raw/main/dist.zip
+unzip dist.zip
+sudo cp -a dist/* /usr/share/nginx/html/
 
 
 
