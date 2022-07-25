@@ -35,7 +35,7 @@ Defina o nome da função e a Descrição.
 Clique em "Criar função".
 
 
-3-Funções Lambda.
+3- Funções Lambda.
 As funções lambda servem para você desenvolver o seu código backend.
 Forão criadas três funções Lambda para executar o código com as orientações a seguir:
 Inserir, pegar e excluir.
@@ -73,7 +73,7 @@ Em "Papel de execução", clique em "Editar" e selecione o grupo de permissões 
 Faça isso para todas as funções.
 
 
-Api Gateway
+4- Api Gateway
 A ApiGateway tem a função de integração com as funções lambda.
 
 Acesse o serviço API Gateway.
@@ -89,7 +89,7 @@ Método: Selecione a opção "Post"
 Função Lambda: Insira o nome da função responsável pelo código de inserir registros na tabela do bano de dados. Clique em "Salvar".
 
 
-EC2
+5- EC2
 A plataforma EC2 é uma máquina virtual para hospedar o código front, que será utilizado para melhorar a experiência dos usuários.
 
 Acesse o serviço EC2.
@@ -127,6 +127,9 @@ ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
         }
 
 
+6- Código Front
+O código front foi desenvolvido em linguagem Vue Js.
+O zip do front é https://github.com/calvesaws/Documentacao/raw/main/dist.zip
 
 
 
