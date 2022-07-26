@@ -135,6 +135,7 @@ Para baixar o arquivo:
 wget https://github.com/calvesaws/Documentacao/raw/main/dist.zip
 Extrai o arquivo:
 unzip dist.zip
+A
 Copia os arquivos:
 sudo cp -a dist/* /usr/share/nginx/html/
 
