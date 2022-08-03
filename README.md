@@ -167,9 +167,9 @@ Descomente toda seção serve responsável pela 443 server e realize as seguinte
 
 Comente ou exclua esse trecho:
 
-#   ssl_ciphers PROFILE=SYSTEM;
+   ssl_ciphers PROFILE=SYSTEM;
    
-   #   ssl_prefer_server_ciphers on;
+   ssl_prefer_server_ciphers on;
 
 Adicione esse trecho:
 
