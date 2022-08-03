@@ -111,7 +111,7 @@ Selecione a opção "Ativar CORS do API Gateway" e "Criar recurso".
 
 Método: 
 
-Selecione a opção "Post"
+Selecione a opção de acordo com o endpoint que quer acessar, ex: "Post", "Get", "Delete"...
 
 *Obs. Apenas para get e delete selecione "Usar a integração de proxy do Lambda" 
 
