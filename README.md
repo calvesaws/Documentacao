@@ -75,7 +75,7 @@ Clique em "Fazer upload de" e em seguida "Arquivo zip".
 Selecione a opção "Fazer download" escolha o download referente a função inserir e clique em "Salvar".
 Faça esse mesmo procedimento para todas as funções com os downloads respectivos.
 
-Com as funções criadas, adicione as permições criadas previamente.
+Com as funções criadas, adicione as permições criadas previamente em "Role".
 Dentro de uma função, clique em "Configuração".
 Em "Papel de execução", clique em "Editar" e selecione o grupo de permissões que foi criado e clique em "Salvar".
 Faça isso para todas as funções.
