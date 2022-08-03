@@ -57,13 +57,13 @@ Faça esse processo para as três funções do código, inserir, pegar e excluir
 
 Após as funções serem criadas, faça o download dos arquivos:
 Função inserir:
-https://github.com/calvesaws/Documentacao/raw/main/GravarMensagem-20e7bc2d-19f2-4396-9cd8-bf363f1639fd.zip
+https://github.com/calvesaws/Documentacao/raw/main/GravarRegistro-8684a72a-9b8d-4d5d-b219-64681d8de9dd.zip
 
-Função pegar:
-https://github.com/calvesaws/Documentacao/raw/main/GetRegistros-c7deebb1-0e40-433c-aeed-56d8fb733465.zip
+Função listar:
+https://github.com/calvesaws/Documentacao/raw/main/ListarRegistro-24fb9cb7-09a1-44d0-a390-eab4f1856b5b.zip
 
 Funçao excluir:
-https://github.com/calvesaws/Documentacao/raw/main/DeleteRegistro-a12931f7-ad90-4f43-b0c4-9622561ed7ce.zip
+https://github.com/calvesaws/Documentacao/raw/main/ExcluirRegistro-88d0fdd7-4a43-4fce-a467-c0fdebc506c9.zip
 
 Faça uploud em cada função com o link dos dowloads.
 Clique na função que for desenvolver para inserir registros na tabela do banco de dados.
