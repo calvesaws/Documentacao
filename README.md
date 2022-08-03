@@ -8,7 +8,7 @@ garantindo que somente o usuário poderá ter acesso aos seus dados após o comp
 terão acesso a esses dados sensíveis.
 O emissor irá gerar um link através de uma plataforma web fornecendo uma mensagem representando um dado sensível, uma senha, um tempo de expiração da
 mensagem e
-a quantidade de vezes que o usuário poderá acessar essa mensagem, garantindo maior segurança no compartilhamento de seus dados. O link gerado nada mais é do
+a quantidade de vezes que o usuário poderá visualizar essa mensagem, garantindo maior segurança no compartilhamento de seus dados. O link gerado nada mais é do
 que
 o link da página web que ele utilizou para desenvolver a mensagem e o id desta mensagem no banco de dados.
 
