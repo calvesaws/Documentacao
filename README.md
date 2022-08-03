@@ -20,6 +20,7 @@ relacionamentos entre eles, portanto se faz necessário adicionar permissões pa
 Acesse o serviço DynamoDB na console AWS.
 Criar tabela
 Defina um nome, uma chave de partição(que será a identificação do seu documento) e defina o tipo que será essa chave,
+
 Após criar a tabela, defina o tempo de vida que o documento permanecerá ativo na tabela, selecione-a e clique em "configurações adicionais". Em "Tempo de
 vida (TTL)" selecione a opção "Habilitar". Insira o nome do atributo que terá a informação de tempo que o documento poderá ficar ativo(esse atributo será
 utilizado na função Lambda futuramente para controlar o tempo de vida do documento) e clique em habilitar TTL.
@@ -29,12 +30,19 @@ utilizado na função Lambda futuramente para controlar o tempo de vida do docum
 Role são permissões que os serviços precisam para interagir entre si. 
 
 Acesse o serviço IAM.
+
 Funções.
+
 Criar função.
+
 Selecione "Serviço da AWS".
+
 Em "Caso de uso" selecione "Lambda" e clique em "próximo".
+
 Pesquise por "AmazonDynamoDBFullAccess" e "AWSLambdaBasicExecutionRole". Clique em "próximo".
+
 Defina o nome da função e a Descrição.
+
 Clique em "Criar função".
 
 
@@ -105,7 +113,7 @@ Método: Selecione a opção "Post"
 
 *Obs. Apenas para get e delete selecione "Usar a integração de proxy do Lambda" 
 
-Função Lambda: Insira o nome da função responsável pelo código de inserir registros na tabela do bano de dados. Clique em "Salvar".
+Função Lambda: Insira o nome da função responsável pelo código de inserir registros na tabela do banco de dados. Clique em "Salvar".
 
 
 5- EC2
@@ -113,51 +121,85 @@ Função Lambda: Insira o nome da função responsável pelo código de inserir 
 A plataforma EC2 é uma máquina virtual para hospedar o código front, que será utilizado para melhorar a experiência dos usuários.
 
 Acesse o serviço EC2.
+
 Clique em "Instâncias".
+
 Executar instâncias.
+
 Dê um nome a instância.
+
 Em "Imagens de aplicação e de sistema operacional" escolha "Amazon Linux".
+
 Em "Par de chaves (login)" é preciso criar um par de chaves para se conectar com segurança à sua instância. Clique em "Criar novo par de chaves".
+
 Defina um nome para o par de chaves.
+
 Clique em "Criar par de chaves".
+
 Em "Network settings" habilite as seguintes regras:"Permitir tráfego HTTPs da Internet" e "Permitir tráfego HTTP da Internet".
+
 Clique em "Executar intância".
+
 Clique em "Ações", "Conectar" e "Conectar". Irá abrir um console em outra aba.
+
 Precisará habilitar e instalar servidor web(nginx).
+
 Digite os seguintes comandos no console: "sudo amazon-linux-extras enable nginx1", "sudo yum install nginx", "y".
+
 Nessa etapa precisará configurar o arquivo de configuração.
+
 Digite "sudo systemclt enable ngnix" e "sudo systemclt start ngnix"
+
 Gere a chave e certificado auto-assinado utilizado pelo nginx para conexão https:
+
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/pki/nginx/server.key -out /etc/pki/nginx/server.crt
+
 Common Name (eg, your name or your server's hostname) []:*.compute-1.amazonaws.com
+
 Adicione o seguinte trecho na seção server responsavel pela porta 80:
+
 location / {
         try_files $uri $uri/ /index.html;
         }
         
+
 Descomente toda seção serve responsável pela 443 server e realize as seguintes alterações:
+
 Comente ou exclua esse trecho:
+
 #   ssl_ciphers PROFILE=SYSTEM;
-     #   ssl_prefer_server_ciphers on;
+   
+   #   ssl_prefer_server_ciphers on;
 
 Adicione esse trecho:
+
 ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
-        location / {
+       
+       location / {
+        
         try_files $uri $uri/ /index.html;
+        
         }
 
 
 6- Código Front
 
 O código front foi desenvolvido em linguagem Vue Js.
+
 O zip do front é https://github.com/calvesaws/Documentacao/raw/main/dist.zip
+
 Execute esses três comandos no EC2:
+
 Para baixar o arquivo:
+
 wget https://github.com/calvesaws/Documentacao/raw/main/dist.zip
+
 Extrai o arquivo:
+
 unzip dist.zip
-A
+
 Copia os arquivos:
+
 sudo cp -a dist/* /usr/share/nginx/html/
 
 
