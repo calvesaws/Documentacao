@@ -204,8 +204,19 @@ sudo cp -a dist/* /usr/share/nginx/html/
 
 
 
+Link para o código Fonte:
 
+LambdaGravarRegistro:
 
+https://github.com/calvesaws/LambdaGravarRegistro
+
+LambdaListarRegistro:
+
+https://github.com/calvesaws/LambdaListarRegistro
+
+LambdaExcluirRegistro:
+
+https://github.com/calvesaws/LambdaExcluirRegistro
 
 
 
