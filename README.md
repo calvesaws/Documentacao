@@ -2,6 +2,7 @@
 Documentação do projeto GetmySecret
 
 °Contextualização do projeto
+
 A ideia principal do projeto é o compartilhamento seguro de dados sensíveis entre usuários, compartilhando esses dados com segurança evitando vazamentos, e
 garantindo que somente o usuário poderá ter acesso aos seus dados após o compartilhamento utilizando a criptografia (chave assimétrica), onde apenas usuários
 terão acesso a esses dados sensíveis.
