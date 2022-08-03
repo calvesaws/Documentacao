@@ -109,7 +109,9 @@ Recurso: Insira o nome do recurso e o caminho desse recurso.
 
 Selecione a opção "Ativar CORS do API Gateway" e "Criar recurso".
 
-Método: Selecione a opção "Post"
+Método: 
+
+Selecione a opção "Post"
 
 *Obs. Apenas para get e delete selecione "Usar a integração de proxy do Lambda" 
 
