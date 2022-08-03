@@ -16,6 +16,7 @@ Foi utilizado os seguintes serviços da AWS: Funções Lambda, banco de dados Dy
 relacionamentos entre eles, portanto se faz necessário adicionar permissões para esses serviços interagirem entre si.
 
 1- Banco de dados(DynamoDB)
+
 Acesse o serviço DynamoDB na console AWS.
 Criar tabela
 Defina um nome, uma chave de partição(que será a identificação do seu documento) e defina o tipo que será essa chave,
@@ -24,6 +25,7 @@ vida (TTL)" selecione a opção "Habilitar". Insira o nome do atributo que terá
 utilizado na função Lambda futuramente para controlar o tempo de vida do documento) e clique em habilitar TTL.
 
 2- Role
+
 Role são permissões que os serviços precisam para interagir entre si. 
 
 Acesse o serviço IAM.
@@ -37,6 +39,7 @@ Clique em "Criar função".
 
 
 3- Funções Lambda.
+
 As funções lambda servem para você desenvolver o seu código backend.
 Forão criadas três funções Lambda para executar o código com as orientações a seguir:
 Inserir, pegar e excluir.
@@ -75,6 +78,7 @@ Faça isso para todas as funções.
 
 
 4- Api Gateway
+
 A ApiGateway tem a função de integração com as funções lambda.
 
 Acesse o serviço API Gateway.
@@ -91,6 +95,7 @@ Função Lambda: Insira o nome da função responsável pelo código de inserir 
 
 
 5- EC2
+
 A plataforma EC2 é uma máquina virtual para hospedar o código front, que será utilizado para melhorar a experiência dos usuários.
 
 Acesse o serviço EC2.
@@ -129,6 +134,7 @@ ssl_protocols TLSv1 TLSv1.1 TLSv1.2;
 
 
 6- Código Front
+
 O código front foi desenvolvido em linguagem Vue Js.
 O zip do front é https://github.com/calvesaws/Documentacao/raw/main/dist.zip
 Execute esses três comandos no EC2:
