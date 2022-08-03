@@ -12,7 +12,7 @@ a quantidade de vezes que o usuário poderá visualizar essa mensagem, garantind
 que
 o link da página web que ele utilizou para desenvolver a mensagem e o id desta mensagem no banco de dados.
 
-Foi utilizado os seguintes serviços da AWS: Funções Lambda, banco de dados DynamoDB, ApiGateway e EC2. Por serem serviços distintos, por padrão não há
+Foi utilizado os seguintes serviços da Amazon AWS: Funções Lambda, banco de dados DynamoDB, ApiGateway e EC2. Por serem serviços distintos, por padrão não há
 relacionamentos entre eles, portanto se faz necessário adicionar permissões para esses serviços interagirem entre si.
 
 1- Banco de dados(DynamoDB)
@@ -42,11 +42,11 @@ Clique em "Criar função".
 
 As funções lambda servem para você desenvolver o seu código backend.
 Forão criadas três funções Lambda para executar o código com as orientações a seguir:
-Inserir, pegar e excluir.
+Inserir, listar e excluir.
 Função Inserir - Responsável por gravar registros na tabela do banco de dados(DynamoDB).
 Adicionei a função de criptografar a mensagem.
-Função Pegar- Responsável por resgatar um registro na tabela através do id.
-Função excluir - Exclui o registro na tabea.
+Função Listar- Responsável por resgatar um registro na tabela através do id.
+Função excluir - Exclui o registro na tabela.
 
 
 Acesse o serviço Lambda, Funções e Criar funções.
