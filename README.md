@@ -43,9 +43,12 @@ Clique em "Criar função".
 As funções lambda servem para você desenvolver o seu código backend.
 Foram criadas três funções Lambda para executar o código com as orientações a seguir:
 Inserir, listar e excluir.
+
 Função Inserir - Responsável por gravar registros na tabela do banco de dados(DynamoDB).
 Adicionei a função de criptografar a mensagem.
+
 Função Listar- Responsável por resgatar um registro na tabela através do id.
+
 Função excluir - Exclui o registro na tabela.
 
 
