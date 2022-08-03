@@ -86,15 +86,25 @@ Faça isso para todas as funções.
 A ApiGateway tem a função de integração com as funções lambda.
 
 Acesse o serviço API Gateway.
+
 Crie uma API.
+
 Selecione a opção "API REST" (pública).
+
 Clique em "Compilar".
+
 Defina um nome para a API e clique em "Criar API".
+
 Na opção "Ações" defina o Recurso e método.
+
 Recurso: Insira o nome do recurso e o caminho desse recurso.
+
 Selecione a opção "Ativar CORS do API Gateway" e "Criar recurso".
+
 Método: Selecione a opção "Post"
+
 *Obs. Apenas para get e delete selecione "Usar a integração de proxy do Lambda" 
+
 Função Lambda: Insira o nome da função responsável pelo código de inserir registros na tabela do bano de dados. Clique em "Salvar".
 
 
